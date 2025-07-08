@@ -1,4 +1,3 @@
-
 import type React from "react"
 import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
@@ -22,13 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body 
-        className={`${dmSans.className} min-h-screen flex flex-col`} 
-        style={{backgroundColor: 'bg-deep-purple'}}
-
+        className={`${dmSans.className} min-h-screen flex flex-col bg-deep-purple`} 
         suppressHydrationWarning
       >
         <Navbar />
-        <main className="flex-grow ">{children}</main>
+        <main className="flex-grow w-full max-w-[2000px] mx-auto">{children}</main>
         <Footer />
       </body>
     </html>

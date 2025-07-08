@@ -31,7 +31,7 @@ const ScrollDivider = ({
     <div className="text-white font-medium space-y-2 p-3">
       <h3  className="text-2xl font-bold text-start ">Najah SaaS Solutions</h3>
       <p className="text-sm font-normal text-start">
-        Transform your ideas into powerful SaaS applications with Najah. We build scalable, user-friendly, and high-performing software-as-a-service platforms tailored to your business goals. Whether you're a startup or scaling enterprise, our expert team delivers secure, cloud-native apps that solve real-world problems and drive revenue.
+        Transform your ideas into powerful SaaS applications with Najah. We build scalable, user-friendly, and high-performing software-as-a-service platforms tailored to your business goals. Whether you&apos;re a startup or scaling enterprise, our expert team delivers secure, cloud-native apps that solve real-world problems and drive revenue.
       </p>
     </div>
   ),

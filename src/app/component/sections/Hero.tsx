@@ -65,7 +65,7 @@ export default function Hero() {
 
       {/* Gradient Blobs */}
       <motion.div
-        className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-accent-pink/30 to-accent-blue/30 rounded-full filter blur-[80px] opacity-30 animate-blob"
+        className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gradient-to-br from-accent-pink/30 to-accent-blue/30 rounded-full filter blur-[80px] opacity-30 animate-blob"
         animate={{
           x: [0, 30, 0],
           y: [0, 50, 0],
@@ -77,7 +77,7 @@ export default function Hero() {
         }}
       />
       <motion.div
-        className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-accent-blue/30 to-accent-pink/30 rounded-full filter blur-[80px] opacity-30 animate-blob animation-delay-2000"
+        className="absolute bottom-0 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gradient-to-tr from-accent-blue/30 to-accent-pink/30 rounded-full filter blur-[80px] opacity-30 animate-blob animation-delay-2000"
         animate={{
           x: [0, -30, 0],
           y: [0, -50, 0],
@@ -94,7 +94,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="container mx-auto px-6 absolute bottom-32 left-0 right-0 z-20"
+        className="container mx-auto px-4 sm:px-6 absolute bottom-16 sm:bottom-32 left-0 right-0 z-20"
         style={{ y: smoothY, opacity: smoothOpacity, scale: smoothScale }}
       >
         <motion.div
@@ -103,7 +103,7 @@ export default function Hero() {
           transition={{ delay: 1, duration: 0.5 }}
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex justify-center">
-            <Button size="lg" className="rounded-full text-base bg-gradient-to-r from-accent-pink to-accent-blue">
+            <Button size="lg" className="rounded-full text-sm sm:text-base bg-gradient-to-r from-accent-pink to-accent-blue">
               Get Started Now
             </Button>
           </motion.div>

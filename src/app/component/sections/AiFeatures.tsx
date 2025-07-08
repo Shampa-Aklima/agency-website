@@ -62,9 +62,9 @@ export default function AiFeatures() {
   }
 
   return (
-    <section className="py-20 relative overflow-hidden bg-deep-purple/50" ref={sectionRef}>
+    <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden bg-deep-purple/50" ref={sectionRef}>
       <motion.div
-        className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-accent-blue/10 to-accent-pink/10 rounded-full filter blur-[100px] opacity-30"
+        className="absolute -bottom-40 -left-40 w-[300px] sm:w-[400px] md:w-[600px] h-[300px] sm:h-[400px] md:h-[600px] bg-gradient-to-tr from-accent-blue/10 to-accent-pink/10 rounded-full filter blur-[100px] opacity-30"
         animate={{
           scale: [1, 1.2, 1],
           rotate: [0, -90, 0],
@@ -76,9 +76,9 @@ export default function AiFeatures() {
         }}
       />
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
@@ -88,12 +88,12 @@ export default function AiFeatures() {
             animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">
               How We Revolutionize Your Business with AI
             </h2>
           </motion.div>
           <motion.p
-            className="text-white/70 max-w-2xl mx-auto"
+            className="text-white/70 text-sm sm:text-base max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -103,7 +103,7 @@ export default function AiFeatures() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -118,9 +118,9 @@ export default function AiFeatures() {
                 }}
               >
                 <Card className={`h-full bg-gradient-to-br ${feature.color} transition-all duration-500`}>
-                  <CardHeader>
+                  <CardHeader className="p-4 sm:p-6">
                     <motion.div
-                      className="mb-4 bg-white/10 p-3 rounded-xl w-fit"
+                      className="mb-3 sm:mb-4 bg-white/10 p-2 sm:p-3 rounded-xl w-fit"
                       whileHover={{
                         rotate: [0, 10, -10, 0],
                         transition: { duration: 0.5, repeat: Number.POSITIVE_INFINITY },
@@ -128,8 +128,8 @@ export default function AiFeatures() {
                     >
                       {feature.icon}
                     </motion.div>
-                    <CardTitle>{feature.title}</CardTitle>
-                    <CardDescription>{feature.description}</CardDescription>
+                    <CardTitle className="text-base sm:text-lg font-semibold">{feature.title}</CardTitle>
+                    <CardDescription className="text-xs sm:text-sm mt-1">{feature.description}</CardDescription>
                   </CardHeader>
                 </Card>
               </motion.div>
@@ -138,16 +138,16 @@ export default function AiFeatures() {
         </motion.div>
 
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-10 sm:mt-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <p className="text-white/70 mb-6">
-            Ready to transform your business? Let's build something amazing together.
+          <p className="text-white/70 text-sm sm:text-base mb-4 sm:mb-6">
+            Ready to transform your business? Let&apos;s build something amazing together.
           </p>
           <motion.button
-            className="bg-gradient-to-r from-accent-pink to-accent-blue text-white px-8 py-3 rounded-full font-medium hover:shadow-[0_0_20px_rgba(253,94,255,0.5)] transition-all"
+            className="bg-gradient-to-r from-accent-pink to-accent-blue text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:shadow-[0_0_20px_rgba(253,94,255,0.5)] transition-all"
             whileHover={{
               scale: 1.05,
               boxShadow: "0 0 30px rgba(253,94,255,0.7)",

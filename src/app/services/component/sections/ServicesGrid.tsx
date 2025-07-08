@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import {
     Monitor,
     Workflow,
@@ -28,7 +29,7 @@ import {
   export default function ServicesGrid({ services }: ServicesGridProps) {
     // Map service types to their respective icons
     const getIconForService = (serviceType: string) => {
-      const iconMap: Record<string, JSX.Element> = {
+      const iconMap: Record<string, ReactNode> = {
         "ai-development": <Monitor className="w-6 h-6 text-purple-400" />,
         automation: <Workflow className="w-6 h-6 text-purple-400" />,
         "ai-agents": <Bot className="w-6 h-6 text-purple-400" />,

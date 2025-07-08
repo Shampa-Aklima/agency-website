@@ -22,7 +22,7 @@ interface Testimonial {
                     <span key={i}>★</span>
                   ))}
               </div>
-              <p className="text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-300 mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
               <div>
                 <div className="font-bold">{testimonial.name}</div>
                 <div className="text-sm text-gray-400">{testimonial.title}</div>

@@ -36,37 +36,37 @@ const Navbar = ({ items = defaultNavItems, className }: NavbarProps) => {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 bg-background",
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-background/80 backdrop-blur-sm",
         isScrolled ? "shadow-md py-2" : "py-4",
         className,
       )}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          
-            <h1>NAZAH</h1>
-         
+          <Link href="/" className="flex items-center space-x-2">
+            <h1 className="text-xl sm:text-2xl font-bold">NAZAH</h1>
+          </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {items.map((item, index) => (
               <NavbarItem key={index} item={item} />
             ))}
           </nav>
 
           {/* Right side actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             <ThemeSwitcher />
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="text-sm">
               Sign In
             </Button>
-            <Button size="sm">Sign Up</Button>
+            <Button size="sm" className="text-sm">Sign Up</Button>
           </div>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md hover:bg-accent"
+            className="md:hidden p-2 rounded-md hover:bg-accent/10 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -76,18 +76,20 @@ const Navbar = ({ items = defaultNavItems, className }: NavbarProps) => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 border-t mt-2">
             <nav className="flex flex-col space-y-4">
               {items.map((item, index) => (
                 <MobileNavItem key={index} item={item} />
               ))}
             </nav>
             <div className="mt-6 flex flex-col space-y-3">
-              <ThemeSwitcher />
-              <Button variant="outline" className="w-full">
+              <div className="flex justify-center">
+                <ThemeSwitcher />
+              </div>
+              <Button variant="outline" className="w-full text-sm">
                 Sign In
               </Button>
-              <Button className="w-full">Sign Up</Button>
+              <Button className="w-full text-sm">Sign Up</Button>
             </div>
           </div>
         )}
@@ -103,18 +105,18 @@ const NavbarItem = ({ item }: { item: NavItem }) => {
     return (
       <div className="relative group">
         <button
-          className="flex items-center space-x-1 text-foreground/80 hover:text-foreground transition-colors"
+          className="flex items-center space-x-1 text-foreground/80 hover:text-foreground transition-colors text-sm lg:text-base"
           onClick={() => setIsOpen(!isOpen)}
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
         >
-        
-          <ChevronDown size={16} />
+          {item.title}
+          <ChevronDown size={16} className={cn("transition-transform", isOpen ? "rotate-180" : "")} />
         </button>
 
         {isOpen && (
           <div
-            className="absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-background border z-10"
+            className="absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-background/95 backdrop-blur-sm border z-10"
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
           >
@@ -122,7 +124,7 @@ const NavbarItem = ({ item }: { item: NavItem }) => {
               <Link
                 key={index}
                 href={child.href}
-                className="block px-4 py-2 text-sm hover:bg-accent transition-colors"
+                className="block px-4 py-2 text-sm hover:bg-accent/10 transition-colors"
               >
                 {child.title}
               </Link>
@@ -136,7 +138,7 @@ const NavbarItem = ({ item }: { item: NavItem }) => {
   return (
     <Link
       href={item.href}
-      className="text-foreground/80 hover:text-foreground transition-colors"
+      className="text-foreground/80 hover:text-foreground transition-colors text-sm lg:text-base"
     >
       {item.title}
     </Link>
@@ -150,7 +152,7 @@ const MobileNavItem = ({ item }: { item: NavItem }) => {
     return (
       <div>
         <button
-          className="flex items-center justify-between w-full text-left"
+          className="flex items-center justify-between w-full text-left text-sm"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span>{item.title}</span>
@@ -166,7 +168,7 @@ const MobileNavItem = ({ item }: { item: NavItem }) => {
               <Link
                 key={index}
                 href={child.href}
-                className="block py-1 text-foreground/70 hover:text-foreground transition-colors"
+                className="block py-1 text-foreground/70 hover:text-foreground transition-colors text-sm"
               >
                 {child.title}
               </Link>
@@ -180,7 +182,7 @@ const MobileNavItem = ({ item }: { item: NavItem }) => {
   return (
     <Link
       href={item.href}
-      className="block text-foreground/80 hover:text-foreground transition-colors"
+      className="block text-foreground/80 hover:text-foreground transition-colors text-sm"
     >
       {item.title}
     </Link>

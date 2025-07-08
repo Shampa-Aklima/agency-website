@@ -7,3 +7,16 @@ export interface Service {
   benefits: string[];
   carouselImages: string[];
 }
+
+export interface ServiceItemType {
+  name: string;
+}
+
+export interface ServiceType {
+  id: string;
+  type: string;
+  title: string;
+  description: string;
+  services: ServiceItemType[];
+  learnMoreLink: string;
+}

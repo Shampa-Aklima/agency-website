@@ -13,7 +13,6 @@ export default function Home() {
       <HeroSection
         imageUrl="/bg-img.jpg"
         imageAlt="AI Business Transformation"
-        children=""
       />
 
       <VisionSection />

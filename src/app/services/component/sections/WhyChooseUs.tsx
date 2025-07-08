@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose The Metaverse Company?</h2>
           <p className="text-white/70 max-w-2xl mx-auto">
-            We are dedicated to creating immersive experiences that push the boundaries of what's possible in the
+            We are dedicated to creating immersive experiences that push the boundaries of what&apos;s possible in the
             digital world.
           </p>
         </div>
