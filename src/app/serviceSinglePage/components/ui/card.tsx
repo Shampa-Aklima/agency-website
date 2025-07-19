@@ -1,5 +1,5 @@
 import * as React from "react"
-import { cn } from "../component/lib/utils"
+import { cn } from "../../../component/lib/utils"
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   gradient?: boolean

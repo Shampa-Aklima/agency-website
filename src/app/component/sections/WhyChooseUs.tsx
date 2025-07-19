@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Card, CardHeader, CardTitle, CardDescription } from "../../ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "../../serviceSinglePage/components/ui/card"
 import { Brain, Cpu, Layers, Zap, Shield, Users } from "lucide-react"
 
 const features = [

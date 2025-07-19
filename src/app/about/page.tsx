@@ -1,4 +1,4 @@
-import { HeroSection } from "./component/sections/HeroSection";
+import { HeroSection } from "../component/sections/HeroSection";
 import { WorkProcessSection } from "./component/sections/WorkProcessSection";
 import { TestimonialsSection } from "./component/sections/TestimonialsSection";
 import { CtaSection } from "./component/sections/CtaSection";
@@ -11,8 +11,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-deep-purple text-white relative overflow-hidden">
       <HeroSection
-        imageUrl="/bg-img.jpg"
-        imageAlt="AI Business Transformation"
+        imageUrl="/bg-about.jpg" // Placeholder for about page
+        imageAlt="About Us"
+        variant="about"
       />
 
       <VisionSection />
@@ -49,7 +50,6 @@ export default function Home() {
 
       <TestimonialsSection
         testimonials={[
-        
           {
             stars: 5,
             quote:
@@ -80,11 +80,7 @@ export default function Home() {
         buttonText="Schedule a Free Consultation"
         buttonHref="/contact"
       />
-          <ContactForm variant="about" />
-        </div>
-
-      
-  
-
+      <ContactForm variant="about" />
+    </div>
   );
 }

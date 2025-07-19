@@ -55,11 +55,11 @@ export default function VisionSection() {
                 
               </div>
               <Image
-                src="/woman.jpg"
+                src="/bg1.jpg"
                 alt="AI Agents Demo"
                 width={1200}
                 height={675}
-                className="w-full h-full object-cover opacity-70"
+                className="w-full h-full  object-fill opacity-70"
               />
             </div>
             

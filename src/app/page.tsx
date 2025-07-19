@@ -15,12 +15,12 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <AiFeatures />
-      <ScrollDivider
+      {/* <ScrollDivider
         initialHeight={40}
         maxHeight={300}
         width={3}
         color="bg-blue-500"
-      />
+      /> */}
       <ServiceGrid />
       <CtaSection
               title="Ready to join the future of digital interaction?"

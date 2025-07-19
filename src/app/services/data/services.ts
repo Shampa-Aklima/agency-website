@@ -1,4 +1,7 @@
+
 import type { ServiceType } from "../types/service"
+
+
 
 export const servicesData: ServiceType[] = [
   {
@@ -29,31 +32,20 @@ export const servicesData: ServiceType[] = [
     learnMoreLink: "/services/saas-applications",
   },
   
+  
   {
-    id: "virtual-reality",
-    type: "virtual-reality",
-    title: "Virtual Reality (VR) Solutions",
-    description: "Immersive virtual reality applications for training, marketing, and customer experiences.",
-    services: [
-      { name: "Corporate Training" },
-      { name: "Marketing Campaigns" },
-      { name: "Virtual Showrooms" },
-      { name: "Product Demonstrations" },
-    ],
-    learnMoreLink: "/services/virtual-reality",
+    id: "app-development",
+    type: "app-development",
+    title: "App Development",
+    description: "Custom mobile and web applications tailored to your business needs.",
+    services: [{ name: "iOS Development" }, { name: "Android Development" }, { name: "Web Development" }],
+    learnMoreLink: "/services/app-development",
   },
+
   {
-    id: "augmented-reality",
-    type: "augmented-reality",
-    title: "Augmented Reality (AR) Experiences",
-    description: "Engaging AR apps with seamless UX solutions for retail, marketing, and industry applications.",
-    services: [{ name: "Retail AR" }, { name: "Industrial AR" }, { name: "WebAR" }, { name: "Brand Promotion" }],
-    learnMoreLink: "/services/augmented-reality",
-  },
-  {
-    id: "mixed-reality",
-    type: "mixed-reality",
-    title: "Mixed Reality (MR) Integration",
+    id: "multi-platform-development",
+    type: "multi-platform-development",
+    title: "Multi-Platform Development",
     description:
       "Blending physical and digital worlds with innovative solutions for education, training, and entertainment.",
     services: [
@@ -62,13 +54,13 @@ export const servicesData: ServiceType[] = [
       { name: "Entertainment" },
       { name: "Collaborative Spaces" },
     ],
-    learnMoreLink: "/services/mixed-reality",
+    learnMoreLink: "/services/multi-platform-development",
   },
   {
-    id: "immersive-commerce",
-    type: "immersive-commerce",
-    title: "Immersive Commerce",
-    description: "Next-generation shopping experiences and customer engagement.",
+    id: "web-development",
+    type: "web-development",
+    title: "Web Development",
+    description: "Building responsive and high-performance websites.",
     services: [
       { name: "Virtual Showrooms" },
       { name: "3D Product Visualization" },

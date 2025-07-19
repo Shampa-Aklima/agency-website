@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardContent } from "../../ui/card"
+import { Card, CardContent } from "../../serviceSinglePage/components/ui/card"
 import { Avatar } from "../ui/avatar"
 
 interface Testimonial {

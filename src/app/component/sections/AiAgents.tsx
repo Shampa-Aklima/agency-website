@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Play, Bot, Brain, Zap } from "lucide-react"
-import { Button } from "../../ui/button"
+import { Button } from "../../serviceSinglePage/components/ui/button"
 import Image from "next/image"
 
 const agentFeatures = [
@@ -62,7 +62,7 @@ export default function AiAgents() {
                 </div>
               </div>
               <Image
-                src="/about-img.jpg"
+                src="/contact1.jpg"
                 alt="AI Agents Demo"
                 width={1200}
                 height={675}

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Card, CardHeader, CardTitle, CardDescription } from "../../ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "../../serviceSinglePage/components/ui/card"
 import {
   Headset,
   Building2,

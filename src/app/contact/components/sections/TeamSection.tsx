@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-interface ScrollDividerProps {
+interface TeamSectionProps {
   initialHeight?: number;
   maxHeight?: number;
   width?: number;
@@ -16,33 +17,36 @@ interface ScrollDividerProps {
   rightContent?: React.ReactNode;
 }
 
-const ScrollDivider = ({
-  initialHeight = 50,
-  maxHeight = 300,
-  width = 2,
-  color = "bg-primary",
-  className = "",
-  showDot = true,
-  dotSize = 8,
-  dotColor = "bg-primary",
-  backgroundImage = "/hero.jpg",
+const TeamSection = ({
+    initialHeight = 50,
+    maxHeight = 400,
+    width = 2,
+    color = "bg-primary",
+    className = "",
+    showDot = true,
+    dotSize = 8,
+    dotColor = "bg-primary",
+    backgroundImage="/team.jpg",
+    
+    
   leftContent = (
     <div className="text-white font-medium space-y-2 p-3">
-      <h3  className="text-2xl font-bold text-start ">Najah SaaS Solutions</h3>
+      <h3  className="text-2xl font-bold text-start "></h3>
       <p className="text-sm font-normal text-start">
-        Transform your ideas into powerful SaaS applications with Najah. We build scalable, user-friendly, and high-performing software-as-a-service platforms tailored to your business goals. Whether you&apos;re a startup or scaling enterprise, our expert team delivers secure, cloud-native apps that solve real-world problems and drive revenue.
+      
       </p>
     </div>
   ),
+
   rightContent = (
     <div className="text-white font-medium space-y-2 p-3">
-      <h3 className="text-2xl font-bold text-start ">Custom Web Development</h3>
-      <p className="text-sm font-normal text-start">
-        At Najah, we harness the power of AI to create custom web applications that are not only efficient but also future-proof. Our AI-driven development process ensures that your web applications are optimized for performance, security, and user experience. Whether you need a simple website or a complex web application, our team of experts will deliver a solution that exceeds your expectations.
-      </p>
-    </div>
+    <h3  className="text-2xl font-bold text-start "></h3>
+    <p className="text-sm font-normal text-start">
+    
+    </p>
+  </div>
   ),
-}: ScrollDividerProps) => {
+}: TeamSectionProps) => {
   const [dividerHeight, setDividerHeight] = useState(initialHeight);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -71,15 +75,15 @@ const ScrollDivider = ({
 
   return (
     <div
-      className={`relative w-full h-[450px] overflow-hidden ${className}`}
+      className={`relative w-full h-[600px] overflow-hidden ${className}`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center center",
       }}
     >
       {/* Purple Overlay */}
-      <div className="absolute inset-0 bg-[#000000]/60  z-0" />
+      <div className="absolute inset-0 bg-deep-purple/10 bg-opacity-90 z-0" />
 
       {/* Content + Divider */}
       <div className="relative z-10 flex justify-between items-center h-full px-6 md:px-16">
@@ -117,4 +121,4 @@ const ScrollDivider = ({
   );
 };
 
-export default ScrollDivider;
+export default TeamSection;

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { ChevronDown } from "lucide-react";
 import { cva } from "class-variance-authority";
-import { cn } from "../component/lib/utils";
+import { cn } from "../../../component/lib/utils";
 
 // Types
 type DivProps = React.HTMLAttributes<HTMLDivElement>;

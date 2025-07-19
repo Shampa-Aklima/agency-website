@@ -75,7 +75,7 @@ const TeamSection = ({
 
   return (
     <div
-      className={`relative w-full h-[600px] overflow-hidden ${className}`}
+      className={`relative w-full h-[450px] overflow-hidden ${className}`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

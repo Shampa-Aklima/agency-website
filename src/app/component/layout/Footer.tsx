@@ -7,11 +7,16 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="text-center md:text-left">
-            <h3 className="text-white font-bold text-lg sm:text-xl bg-gradient-to-r from-accent-pink to-accent-blue bg-clip-text text-transparent">
-              The Metaverse Company
-            </h3>
+            <div className="flex items-center justify-center md:justify-start space-x-3 mb-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-accent-pink to-accent-blue rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-sm">N</span>
+              </div>
+              <h3 className="text-white font-bold text-lg sm:text-xl bg-gradient-to-r from-accent-pink to-accent-blue bg-clip-text text-transparent">
+                NAJAH
+              </h3>
+            </div>
             <p className="text-white/60 mt-2 text-sm sm:text-base max-w-md">
-              Empowering Businesses and Individuals in the Digital Frontier
+              Where Innovation Meets Imagination
             </p>
           </div>
 

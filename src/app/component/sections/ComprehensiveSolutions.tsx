@@ -54,7 +54,7 @@ export default function ComprehensiveSolutions() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-pink/20 to-accent-blue/20 rounded-2xl transform rotate-3 scale-[0.97]"></div>
               <img
-                src="/woman.jpg"
+                src="/bg1.jpg"
                 alt="Metaverse Solutions"
                 className="rounded-2xl w-full h-auto relative z-10 border border-white/10"
               />

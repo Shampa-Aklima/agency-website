@@ -211,9 +211,9 @@ export default function ContactForm({ variant = "home" }: ContactFormProps) {
                 <Image
                   src="/contact.jpg"
                   alt="Team"
-                  width={1000}
-                  height={1000}
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
+                  width={800}
+                  height={800}
+                  className="w-full h-full object-cover rounded-xl shadow-lg bg-center"
                 />
               </div>
             </div>

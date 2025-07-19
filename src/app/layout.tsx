@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
 import "./globals.css"
 import Footer from "./component/layout/Footer"
-import Navbar from "./component/layout/Navbar"
+import { Navbar } from "./component/layout/Navbar"
 
 
 const dmSans = DM_Sans({ subsets: ["latin"] })

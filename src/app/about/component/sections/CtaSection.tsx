@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "../../../ui/button"
+import { Button } from "../../../serviceSinglePage/components/ui/button"
 
 interface CtaSectionProps {
   title: string

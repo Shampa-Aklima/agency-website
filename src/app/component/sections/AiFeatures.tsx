@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Card, CardHeader, CardTitle, CardDescription } from "../../ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "../../serviceSinglePage/components/ui/card"
 import { MessageSquare, Bot, Brain, Database } from "lucide-react"
 
 const features = [
@@ -137,28 +137,6 @@ export default function AiFeatures() {
           ))}
         </motion.div>
 
-        <motion.div
-          className="text-center mt-10 sm:mt-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <p className="text-white/70 text-sm sm:text-base mb-4 sm:mb-6">
-            Ready to transform your business? Let&apos;s build something amazing together.
-          </p>
-          <motion.button
-            className="bg-gradient-to-r from-accent-pink to-accent-blue text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:shadow-[0_0_20px_rgba(253,94,255,0.5)] transition-all"
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 0 30px rgba(253,94,255,0.7)",
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
-          >
-            Get Started Now
-          </motion.button>
-        </motion.div>
       </div>
     </section>
   )
