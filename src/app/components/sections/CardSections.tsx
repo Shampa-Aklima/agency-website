@@ -88,7 +88,7 @@ export function CardSection({
         {items.map((item, index) => {
   
           return (
-            <>
+           
               <div
                 key={index}
                 className={`${colors.cardBg} h-full w-full p-8 overflow-hidden rounded-xl border ${colors.cardBorder} shadow-lg ${colors.cardHover} transition-all hover:-translate-y-1`}
@@ -107,7 +107,7 @@ export function CardSection({
                   Learn More
                 </Button>
               </div>
-            </>
+           
           );
         })}
       </div>
