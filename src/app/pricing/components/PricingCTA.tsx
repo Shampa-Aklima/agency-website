@@ -1,4 +1,4 @@
-import { Button } from '../../serviceSinglePage/components/ui/button';
+import { Button } from '../../component/ui/button';
 import Link from 'next/link';
 
 export function PricingCTA() {

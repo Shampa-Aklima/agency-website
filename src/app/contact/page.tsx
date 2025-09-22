@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-deep-purple text-white relative overflow-hidden">
       <HeroSection
-              imageUrl="/team.jpg" // Placeholder for service page
+              imageUrl="/woman2.jpg" // Placeholder for service page
               imageAlt="contact"
               variant="contact"
             />

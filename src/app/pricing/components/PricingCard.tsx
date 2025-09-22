@@ -1,5 +1,6 @@
+import { Button } from '@/app/components/ui/button';
 import { Check } from 'lucide-react';
-import { Button } from '../../serviceSinglePage/components/ui/button';
+
 
 interface PricingCardProps {
   name: string;
