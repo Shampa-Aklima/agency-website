@@ -11,7 +11,7 @@ const heroSlides = [
     imageSize: "cover",
     imagePosition: "center",
     width: 1200,
-    height: 600,
+    height: 800,
     className: "bg-gradient-to-r from-accent-pink to-accent-blue",
     // Store title and subtitle for use in customContent
     slideTitle: "Where Bold Minds Shape a Boundless Tomorrow",
@@ -23,7 +23,7 @@ const heroSlides = [
     imageSize: "cover",
     imagePosition: "center",
     width: 1200,
-    height: 600,
+    height: 800,
     className: "bg-gradient-to-r from-accent-pink to-accent-blue",
     slideTitle: "Empowering Dreams with Cutting Edge Technology",
     slideSubtitle:
@@ -34,7 +34,7 @@ const heroSlides = [
     imageSize: "cover",
     imagePosition: "center",
     width: 1200,
-    height: 600,
+    height: 800,
     className: "bg-gradient-to-r from-accent-pink to-accent-blue",
     slideTitle: "Pioneering the Edge of Innovation and Imagination",
     slideSubtitle:
