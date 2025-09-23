@@ -28,14 +28,14 @@ export function Navbar() {
   return (
     <nav className="bg-deep-purple shadow-lg z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center max-h-[80px]">
+        <div className="flex justify-between items-center max-h-[50px]">
           {/* Logo */}
           <Link href="/">
             <Image
               src="/logo.png"
               alt="Company Logo"
               width={300}
-              height={80}
+              height={50}
               className="cursor-pointer"
             />
           </Link>
